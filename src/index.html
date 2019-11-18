@@ -37,8 +37,13 @@
             background: #fff880;
           }
 
+          h2 {
+            color: white;
+          }
+
           .chart-hed {
             font-size: 14px;
+            color: lightgrey;
           }
 
           .colored-text {
@@ -49,10 +54,11 @@
           .story-text {
             margin-top: 50px;
             margin-bottom: 50px;
-            color: lightgrey;
+            color: white;
           }
         </style>
         <style>
+
 
           /* Set the sticky things 2% from the top */
           .sticky {
@@ -137,6 +143,11 @@
           margin-top: -60px;
         }
 
+        img {
+          margin: 50px;
+        }
+
+
       </style>
   </head>
   <body>
@@ -144,24 +155,29 @@
       <div class="row">
         <!-- <div class="col-sm-12 mt-5 mb-5"> -->
         <div class="col-12">
-          <h1>NYC Rat Sightings</h1>
+          <h1>RATS RATS RATS RATS RATS RATS</h1>
         </div>
       </div>
     
     <div class="row">
-      <div class="story-text"></div>
+      <div class="story-text">rats rats rats rats rats rats rats rats rats rats Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
     </div>
+
+    <div class="row justify-content-center">
+        <img src="rat-divider-6.png">
+      </div>
 
       <div class="row">
       <!-- <div class="row mt-5 mb-5"> -->
         <div class="col-12">
         <!-- <div class="col-sm-12"> -->
-            <h2>annual rats</h2>
-            <p>Rat sightings reported to 311 each year</p>
+            <h2>A decade of NYC rats</h2>
+            <p class="chart-hed">Nearly 140,000 rat sightings have been officially reported to 311 since January 2010. New Yorkers reported 80% more rat sightings in 2017 than 2012, just five years earlier.</p>
         </div>
         <!-- <div class="col-lg-8 sticky"> -->
           <div id="bar-chart"></div>
-          <div class="note-bar-chart"><p>Data through November 11, 2019</p></div>
+          <div class="note-bar-chart"><p>*Data through November 11, 2019</p></div>
+          <div class="note-bar-chart"><p>SOURCE: NYC Open Data</p></div>
 
       </div>
 
@@ -173,26 +189,36 @@
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </div>
 
+          <div class="row justify-content-center">
+              <img src="rat-divider-6.png">
+            </div>
 
 
         <div class="row">
               <!-- <div class="row mt-5 mb-5"> -->
             <div class="col-12">
                 <!-- <div class="col-sm-12"> -->
-              <h2>monthly</h2>
+              <h2>Summertime, and the livin's easy (if ur a rat)</h2>
+              <p class="chart-hed">Rat complaints typically peak in July and August. Despite a $32 million Neighborhood Rat Reduction plan implemented in 2017, reported sightings aren't down by much.</p>
             </div>
                 <!-- <div class="col-lg-8 sticky"> -->
             <div id="grouped-bar-chart"></div>
-            <div class="note-grouped-bar-chart"><p>Data through November 11, 2019</p></div>
+            <div class="note-grouped-bar-chart"><p>*Data through November 11, 2019</p></div>
+      
+        </div>
 
-          
+        <div class="row justify-content-center">
+            <img src="rat-divider-6.png">
+          </div>
+
+        
 
       <!-- <div class="row mt-5 mb-5"> -->
         <div class="row">
         <div class="col-9">
           <!-- <div class="col-sm-12"> -->
             <h2>Across the five boroughs</h2>
-            <p class="chart-hed">Nearly 140,000 rat sightings have been reported to 311 since January 2010. More than a third of those sightings were reported in Brooklyn, the city's most populous borough.</p>
+            <p class="chart-hed">More than a third of rat complaints reported to 311 occurred Brooklyn, the city's most populous borough.</p>
           </div>
           <div class="col-8">
             <!-- <div class="d-flex">   -->
@@ -206,13 +232,19 @@
           </div>
       </div>
 
+      <div class="row">
+          <div class="col-12">
+            <div class="story-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </div>
+
 
 
 
     <script src="bar-chart.js"></script>
     <script src="grouped-bar-chart.js"></script>
     <script src="waffle.js"></script>
-    <script src="scrollytelling.js"></script>
+    <!-- <script src="scrollytelling.js"></script> -->
 
 
    </body>

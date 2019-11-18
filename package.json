@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest",
     "start": "parcel src/index.html",
-    "build": "parcel build src/index.html --out-dir docs --public-url /rats"
+    "build": "parcel build src/index.html --out-dir docs --public-url /nyc-rats"
   },
   "jest": {
     "setupFiles": [
