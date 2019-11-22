@@ -71,13 +71,9 @@ function ready(datapoints) {
     .attr('x', d => {
       return xPositionScale(d.datetime)
     })
-    .attr('y', d => {
-      return yPositionScale(+d['Unique Key'])
-    })
+    .attr('y', height)
     .attr('width', xPositionScale.bandwidth())
-    .attr('height', d => {
-      return height - yPositionScale(+d['Unique Key'])
-    })
+    .attr('height', 0)
     .attr('fill', '#99A5C6')
     .attr('opacity', '75%')
     .on('mouseover', function(d) {
@@ -122,6 +118,7 @@ function ready(datapoints) {
     .append('g')
     .attr('class', 'axis y-axis')
     .call(yAxis)
+    .style('visibility', 'hidden') // set to hidden for scrollytelling
 
   // remove solid line on y-axis
   d3.select('.y-axis .domain').remove()
@@ -136,4 +133,26 @@ function ready(datapoints) {
     .attr('class', 'axis x-axis')
     .attr('transform', 'translate(0,' + height + ')')
     .call(xAxis)
+    .style('visibility', 'hidden') // set to hidden for scrollytelling
+
+  d3.select('#intro').on('stepin', () => {
+    // unhide axes
+    svg
+      .selectAll('.axis')
+      .transition()
+      .duration(500)
+      .style('visibility', 'visible')
+
+    // add width of bars
+    svg
+      .selectAll('rect')
+      .transition()
+      .duration(500)
+      .attr('y', d => {
+        return yPositionScale(+d['Unique Key'])
+      })
+      .attr('height', d => {
+        return height - yPositionScale(+d['Unique Key'])
+      })
+  })
 }

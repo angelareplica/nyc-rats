@@ -57,7 +57,7 @@ function ready(datapoints) {
       }
     })
     .text(function(d) {
-      console.log(d)
+      // console.log(d)
       if (d === 'Brooklyn') {
         return '\xa0\xa0\xa0\xa0\xa0\xa0' + 'Brooklyn'
       } else if (d === 'Manhattan') {
